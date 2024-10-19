@@ -1,5 +1,8 @@
 # CS61A
+### 写在前面
+CS61A是我第一个打算认认真真从头学到尾的CS课程，学习这个课程主要是为了学习python，以及熟悉国外大学课程的基本模式，方便自己以后去挑战更复杂更困难的课程。
 
+以下是原课程项目的README
 ### What's is CS61A ?
 
 The CS 61 series is an introduction to computer science, with particular emphasis on software and on machines from a programmer's point of view.
