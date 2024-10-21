@@ -1,6 +1,6 @@
 test = {
   'name': 'debugging-quiz',
-  'points': 1,
+  'points': 0,
   'suites': [
     {
       'cases': [
@@ -13,6 +13,7 @@ test = {
           ],
           'hidden': False,
           'locked': False,
+          'multiline': False,
           'question': r"""
           In the following traceback, what is the most recent function call?
           Traceback (most recent call last):
@@ -36,6 +37,7 @@ test = {
           ],
           'hidden': False,
           'locked': False,
+          'multiline': False,
           'question': r"""
           In the following traceback, what is the cause of this error?
           Traceback (most recent call last):
@@ -87,6 +89,7 @@ test = {
           ],
           'hidden': False,
           'locked': False,
+          'multiline': False,
           'question': 'How do you write a doctest asserting that square(2) == 4?'
         },
         {
@@ -98,6 +101,7 @@ test = {
           ],
           'hidden': False,
           'locked': False,
+          'multiline': False,
           'question': 'When should you use print statements?'
         },
         {
@@ -109,6 +113,7 @@ test = {
           ],
           'hidden': False,
           'locked': False,
+          'multiline': False,
           'question': 'How do you prevent the ok autograder from interpreting print statements as output?'
         },
         {
@@ -121,19 +126,8 @@ test = {
           ],
           'hidden': False,
           'locked': False,
+          'multiline': False,
           'question': 'What is the best way to open an interactive terminal to investigate a failing test for question sum_digits in assignment lab01?'
-        },
-        {
-          'answer': 'python3 ok -q sum_digits --trace',
-          'choices': [
-            'python3 ok -q sum_digits -i',
-            'python3 ok -q sum_digits --trace',
-            'python3 ok -q sum_digits',
-            'python3 -i lab01.py'
-          ],
-          'hidden': False,
-          'locked': False,
-          'question': 'What is the best way to look at an environment diagram to investigate a failing test for question sum_digits in assignment lab01?'
         },
         {
           'answer': 'Code that returns a wrong answer instead of crashing is generally better as it at least works fine',
@@ -146,55 +140,8 @@ test = {
           ],
           'hidden': False,
           'locked': False,
+          'multiline': False,
           'question': 'Which of the following is NOT true?'
-        },
-        {
-          'answer': 'You had an unmatched parenthesis',
-          'choices': [
-            'You had an unmatched parenthesis',
-            'Your indentation mixed tabs and spaces',
-            'You forgot a return statement',
-            'You typed a variable name incorrectly'
-          ],
-          'hidden': False,
-          'locked': False,
-          'question': 'You get a SyntaxError. What is most likely to have happened?'
-        },
-        {
-          'answer': 'Your indentation mixed tabs and spaces',
-          'choices': [
-            'You had an unmatched parenthesis',
-            'Your indentation mixed tabs and spaces',
-            'You forgot a return statement',
-            'You typed a variable name incorrectly'
-          ],
-          'hidden': False,
-          'locked': False,
-          'question': 'You get a IndentationError. What is most likely to have happened?'
-        },
-        {
-          'answer': 'You forgot a return statement',
-          'choices': [
-            'You had an unmatched parenthesis',
-            'Your indentation mixed tabs and spaces',
-            'You forgot a return statement',
-            'You typed a variable name incorrectly'
-          ],
-          'hidden': False,
-          'locked': False,
-          'question': 'You get a TypeError: blah blah blah NoneType blah blah blah. What is most likely to have happened?'
-        },
-        {
-          'answer': 'You typed a variable name incorrectly',
-          'choices': [
-            'You had an unmatched parenthesis',
-            'Your indentation mixed tabs and spaces',
-            'You forgot a return statement',
-            'You typed a variable name incorrectly'
-          ],
-          'hidden': False,
-          'locked': False,
-          'question': 'You get a NameError. What is most likely to have happened?'
         }
       ],
       'scored': False,

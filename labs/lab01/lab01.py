@@ -1,5 +1,36 @@
-from operator import mul
-from functools import reduce
+def digit(n, k):
+    """Return the digit that is k from the right of n for positive integers n and k.
+
+    >>> digit(3579, 2)
+    5
+    >>> digit(3579, 0)
+    9
+    >>> digit(3579, 10)
+    0
+    """
+    for i in range(k):
+        n = n // 10
+    return int(n % 10)
+
+
+def middle(a, b, c):
+    """Return the number among a, b, and c that is not the smallest or largest.
+    Assume a, b, and c are all different numbers.
+
+    >>> middle(3, 5, 4)
+    4
+    >>> middle(30, 5, 4)
+    5
+    >>> middle(3, 5, 40)
+    5
+    >>> middle(3, 5, 40)
+    5
+    >>> middle(30, 5, 40)
+    30
+    """
+    return a + b + c - max(a, max(b, c)) - min(a, min(b, c))
+
+
 def falling(n, k):
     """Compute the falling factorial of n to depth k.
 
@@ -13,10 +44,38 @@ def falling(n, k):
     1
     """
     "*** YOUR CODE HERE ***"
-    if k == 0:
-        return 1
-    return reduce(mul, range(n, n-k, -1))
+    ans = 1
+    for i in range(k):
+        ans = ans * (n - i)
+    return ans
 
+def divisible_by_k(n, k):
+    """
+    >>> a = divisible_by_k(10, 2)  # 2, 4, 6, 8, and 10 are divisible by 2
+    2
+    4
+    6
+    8
+    10
+    >>> a
+    5
+    >>> b = divisible_by_k(3, 1)  # 1, 2, and 3 are divisible by 1
+    1
+    2
+    3
+    >>> b
+    3
+    >>> c = divisible_by_k(6, 7)  # There are no integers up to 6 divisible by 7
+    >>> c
+    0
+    """
+    "*** YOUR CODE HERE ***"
+    cnt  = 0
+    for i in range(1, n + 1):
+        if(i % k == 0):
+            print(i)
+            cnt = cnt + 1
+    return cnt
 
 def sum_digits(y):
     """Sum all the digits of y.
@@ -32,12 +91,11 @@ def sum_digits(y):
     6
     """
     "*** YOUR CODE HERE ***"
-    ans = 0
-    while y:
-        ans += y % 10
-        y //= 10
-    return ans
-
+    result  = 0
+    while(y):
+        result = result + (y % 10)
+        y = y // 10
+    return result
 
 def double_eights(n):
     """Return true if n has two eights in a row.
@@ -55,16 +113,9 @@ def double_eights(n):
     False
     """
     "*** YOUR CODE HERE ***"
-    if n // 10 == 0:
-        return False
-    while n:
-        last = n % 10
-        n //= 10
-        if last == 8 == (n % 10):
-            return True
+    while(n):
+        if(n % 10 == 8):
+            if(n % 100 == 88):
+                return True
+        n = n // 10
     return False
-
-    
-
-
-
