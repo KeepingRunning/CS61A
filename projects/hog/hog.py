@@ -344,11 +344,18 @@ def sus_strategy(score, opponent_score, threshold=11, num_rolls=6):
 
 def final_strategy(score, opponent_score):
     """Write a brief description of your final strategy.
-    
+
     *** YOUR DESCRIPTION HERE ***
     """
     # BEGIN PROBLEM 12
-    return 6  # Remove this line once implemented.
+    score_add = 0
+    roll_number = 0
+    for i in range(0, 11, 1):
+        score_add_i = sus_update(i, score, opponent_score) - score
+        if score_add_i > score_add:
+            score_add = score_add_i
+            roll_number = i
+    return roll_number  # Remove this line once implemented.
     # END PROBLEM 12
 
 
