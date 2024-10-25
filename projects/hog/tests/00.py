@@ -17,7 +17,8 @@ test = {
           4
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         }
       ],
       'scored': True,
@@ -35,10 +36,13 @@ test = {
             'make_test_dice(6)',
             'make_fair_dice(6)',
             'six_sided',
-            'six_sided()'
+            'six_sided()',
+            'six_sided(1)',
+            'six_sided(6)'
           ],
           'hidden': False,
           'locked': False,
+          'multiline': False,
           'question': 'Which of the following is the correct way to "roll" a fair, six-sided die?'
         }
       ],

@@ -5,16 +5,17 @@ test = {
     {
       'cases': [
         {
-          'answer': 'It both takes in a function as an argument and returns a function',
+          'answer': 'It takes in a function as an argument',
           'choices': [
+            'It contains a nested function',
+            'It calls a function that is not itself',
             'It takes in a function as an argument',
-            'It returns a function',
-            'It both takes in a function as an argument and returns a function',
             'It uses the *args keyword'
           ],
           'hidden': False,
           'locked': False,
-          'question': 'What makes make_averaged a higher order function?'
+          'multiline': False,
+          'question': 'What is one reason that make_averaged is a higher order function?'
         },
         {
           'answer': 'An arbitrary amount, which is why we need to use *args to call it',
@@ -25,6 +26,7 @@ test = {
           ],
           'hidden': False,
           'locked': False,
+          'multiline': False,
           'question': 'How many arguments does the function passed into make_averaged take?'
         }
       ],
@@ -42,7 +44,8 @@ test = {
           3.75
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
@@ -54,7 +57,8 @@ test = {
           6.0
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         }
       ],
       'scored': True,
@@ -78,7 +82,8 @@ test = {
           50.0
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
@@ -88,7 +93,8 @@ test = {
           1.0
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
@@ -98,7 +104,8 @@ test = {
           5.0
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         }
       ],
       'scored': True,

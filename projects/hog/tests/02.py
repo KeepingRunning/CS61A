@@ -1,301 +1,144 @@
 test = {
   'name': 'Question 2',
-  'points': 1,
+  'points': 2,
   'suites': [
     {
       'cases': [
         {
           'code': r"""
-          >>> free_bacon(4)
-          6
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(1)
+          >>> boar_brawl(21, 46)
           9
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(20)
-          12
+          >>> boar_brawl(52, 79)
+          15
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(45)
-          9
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(15)
-          6
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(13)
-          8
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(44)
-          10
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(37)
-          6
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(40)
-          14
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(24)
-          8
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(46)
-          8
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(99)
-          10
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(10)
-          11
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(47)
-          7
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(67)
-          9
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(92)
-          17
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(9)
+          >>> boar_brawl(0, 0)
           1
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(25)
-          7
+          >>> boar_brawl(0, 5)
+          1
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(75)
-          12
+          >>> boar_brawl(2, 5)
+          6
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(82)
-          16
+          >>> boar_brawl(7, 2)
+          21
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(88)
-          10
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(72)
+          >>> boar_brawl(6, 10)
           15
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(41)
-          13
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(15)
-          6
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(42)
+          >>> boar_brawl(16, 27)
           12
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(93)
-          16
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(99)
-          10
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(73)
-          14
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(4)
+          >>> boar_brawl(39, 71)
           6
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(83)
-          15
+          >>> boar_brawl(72, 29)
+          1
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(34)
-          9
+          >>> boar_brawl(82, 115) # don't assume scores are below 100
+          3
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(4)
-          6
+          >>> boar_brawl(99, 121) # don't assume scores are below 100
+          21
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(53)
+          >>> a = boar_brawl(42, 61)
+          >>> a # check that the value is being returned, not printed
           12
           """,
           'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         },
         {
           'code': r"""
-          >>> free_bacon(19)
-          2
+          >>> boar_brawl(727, 939)
+          12
+          >>> # ban str and indexing (lists)
+          >>> test.check('hog.py', 'boar_brawl', ['Slice', 'List', 'ListComp', 'Index', 'Subscript', 'For'])
+          True
           """,
           'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(1)
-          9
-          """,
-          'hidden': False,
-          'locked': False
-        },
-        {
-          'code': r"""
-          >>> free_bacon(85)
-          13
-          """,
-          'hidden': False,
-          'locked': False
+          'locked': False,
+          'multiline': False
         }
       ],
       'scored': True,
       'setup': r"""
       >>> from hog import *
+      >>> import tests.construct_check as test
       """,
       'teardown': '',
       'type': 'doctest'
