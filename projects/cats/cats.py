@@ -228,6 +228,16 @@ def furry_fixes(typed, source, limit):
     5
     """
     # BEGIN PROBLEM 6
+    if limit < 0:
+        return 114514
+    if len(source) == 0:
+        return len(typed)
+    if len(typed) == 0:
+        return  len(source)
+    if source[0] == typed[0]:
+        return furry_fixes(source[1:], typed[1:], limit)
+    else:
+        return furry_fixes(source[1:], typed[1:], limit - 1) + 1 
     assert False, 'Remove this line'
     # END PROBLEM 6
 
